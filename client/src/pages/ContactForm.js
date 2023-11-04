@@ -74,15 +74,13 @@ const ContactForm = () => {
     setImgSrc(null);
   };
 
-<<<<<<< Updated upstream
-=======
+
   //   fileRef.put(imgSrc).then((snapshot) => {
   //     console.log("Uploaded a file:", snapshot.ref.fullPath);
   //   });
   // };
   const navigate = useNavigate();
 
->>>>>>> Stashed changes
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!imgSrc) {
