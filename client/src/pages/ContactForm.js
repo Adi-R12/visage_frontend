@@ -1,6 +1,9 @@
 import React, { useState, useEffect, URL, useRef, useCallback } from "react";
 import Webcam from "react-webcam";
 import { database } from "./firebase";
+import { useNavigate } from "react-router-dom";
+
+import 'firebase/firestore';
 import { getDatabase, ref, push } from "firebase/database";
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
@@ -71,6 +74,15 @@ const ContactForm = () => {
     setImgSrc(null);
   };
 
+<<<<<<< Updated upstream
+=======
+  //   fileRef.put(imgSrc).then((snapshot) => {
+  //     console.log("Uploaded a file:", snapshot.ref.fullPath);
+  //   });
+  // };
+  const navigate = useNavigate();
+
+>>>>>>> Stashed changes
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!imgSrc) {
@@ -109,6 +121,8 @@ const ContactForm = () => {
         // Form submission was successful
         setSuccessMessage("Form submitted successfully!");
         setFormSubmitted(true);
+
+        navigate("/");
       })
       .catch((error) => {
         // Handle any potential errors here
@@ -247,7 +261,7 @@ const ContactForm = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="adhaarNumber">Adhaar Number</label>
+            <label htmlFor="adhaarNumber">Aadhaar Number</label>
             <input
               type="text"
               id="adhaarNumber"

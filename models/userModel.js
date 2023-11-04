@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema(
   {
+    uid: {
+      type: String,
+      default: "-1",
+    },
     role: {
       type: String,
       required: [true, "role is required"],

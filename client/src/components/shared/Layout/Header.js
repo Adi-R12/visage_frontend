@@ -19,9 +19,9 @@ const Header = () => {
       <nav className="navbar">
         <div className="container-fluid" style={{ paddingTop: "8px", paddingLeft: "45px", paddingRight: "45px" }}>
           <div className="navbar-brand h1" style={{ fontSize: "28px" }}>
-            <img src="/logo192.png" alt="logo" width="43px" height="43px" />
-            &nbsp;
+            {/* <img src="/logo192.png" alt="logo" width="43px" height="43px" /> */}
             Visage
+
           </div>
           <ul className="navbar-nav flex-row" style={{ fontSize: "17.5px", paddingBottom: "8px" }}>
             {user?.role === "user" && (

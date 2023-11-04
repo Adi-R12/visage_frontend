@@ -32,7 +32,8 @@ const Form = ({ formType, submitBtn, formTitle }) => {
                         );
                 }}
             >
-                <h1 className="text-center">{formTitle}</h1>
+                <h1 className="text-center" style={{ fontSize: "30px" }}>{formTitle}</h1>
+                <br />
                 <hr />
                 <div className="d-flex mb-3">
                     <div className="form-check">

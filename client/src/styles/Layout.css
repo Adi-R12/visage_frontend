@@ -1,9 +1,9 @@
 .sidebar {
   height: 125vh !important;
   width: 40vh !important;
-  background-color: #2e2e2e;
+  background-color: #A5D9E9;
   box-shadow: 0 0 2px gray;
-  color: rgb(206, 206, 206);
+  color: black;
   }
 
   .menu {
@@ -16,7 +16,7 @@
   }
   
   .menu-item a {
-    color: rgb(206, 206, 206);
+    color: black;
     text-decoration: none;
     font-size: 1.2rem;
   }
@@ -25,10 +25,10 @@
   .menu-item i {
     font-size: 1.2rem;
     margin: 0 15px;
-    color: rgb(206, 206, 206);
+    color: black;
   }
   
-  .active {
+  /* .active {
     background-color: white;
     padding: 10px;
     padding-left: 80px;
@@ -38,7 +38,7 @@
   .active a,
   .active i {
     color: #C52C28;
-  }
+  } */
   
   .menu-head{
     padding-top: 10px;
